@@ -3,6 +3,8 @@
 
 [Paul Annesley](http://paul.annesley.cc/)'s Zsh configuration.
 
+<img width="507" height="196" src="https://github.com/pda/dotzsh/raw/master/zsh.png" />
+
 
 Overview
 --------
