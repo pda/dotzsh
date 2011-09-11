@@ -5,7 +5,7 @@ pre_sources=( options )
 post_sources=()
 
 # load remaining sources automatically
-auto_sources=(`basename -s .zsh ~/.zsh/*.zsh`)
+auto_sources=(`for f in ~/.zsh/*.zsh; do basename $f .zsh; done`)
 
 for source in rc $pre_sources $post_sources; do
   auto_sources[(i)$source]=""
