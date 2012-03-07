@@ -4,6 +4,9 @@ setopt append_history
 # Do not enter command lines into the history list if they are duplicates of the previous event.
 setopt hist_ignore_dups
 
+# Do not store in history commands beginning with a space.
+setopt hist_ignore_space
+
 # New history lines are added to $HISTFILE as soon as they are entered.
 setopt inc_append_history
 
