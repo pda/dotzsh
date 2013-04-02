@@ -6,7 +6,8 @@ export RUBY_GC_MALLOC_LIMIT=100000000
 export RUBY_HEAP_FREE_MIN=500000
 
 # rbenv
-if which rbenv > /dev/null; then eval "$(rbenv init -)"; fi
+(( $+commands[rbenv] )) &&
+  eval "$(rbenv init -)"
 
 # Bundler
 alias bx="bundle exec"
