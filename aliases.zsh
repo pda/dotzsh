@@ -11,5 +11,6 @@ mkts() {
 (( $+commands[reattach-to-user-namespace] )) &&
   alias vim="reattach-to-user-namespace vim"
 
+# Use colordiff wrapper for diff if present.
 (( $+commands[colordiff] )) &&
   alias diff="colordiff"
