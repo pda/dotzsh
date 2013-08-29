@@ -9,7 +9,7 @@ mkts() {
 
 # See: https://github.com/ChrisJohnsen/tmux-MacOSX-pasteboard
 if (( $+commands[reattach-to-user-namespace] )); then
-  for cmd in vim; do
+  for cmd in vim pbcopy pbpaste launchd; do
     alias $cmd="reattach-to-user-namespace $cmd"
   done
 fi
