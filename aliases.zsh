@@ -8,8 +8,11 @@ mkts() {
 }
 
 # See: https://github.com/ChrisJohnsen/tmux-MacOSX-pasteboard
-(( $+commands[reattach-to-user-namespace] )) &&
-  alias vim="reattach-to-user-namespace vim"
+if (( $+commands[reattach-to-user-namespace] )); then
+  for cmd in vim; do
+    alias $cmd="reattach-to-user-namespace $cmd"
+  done
+fi
 
 # Use colordiff wrapper for diff if present.
 (( $+commands[colordiff] )) &&
