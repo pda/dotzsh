@@ -4,6 +4,8 @@ export EDITOR=/usr/bin/vim
 
 export CLICOLOR=1
 
+export PROMPT_EOL_MARK=💀
+
 # command history
 HISTFILE=~/.zsh_history
 HISTSIZE=100000
