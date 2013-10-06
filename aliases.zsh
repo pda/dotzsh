@@ -1,10 +1,12 @@
 alias pstree="pstree -g 2"
 alias hd="hexdump -C"
 
-# Make and change to a timestamp directory.
-mkts() {
-  local ts=`date +%Y%m%d-%H%m%S`
-  mkdir $ts && cd $ts
+# mkdir and cd into a directory, defaults to current timestamp.
+function mkcd {
+  local dir=$1
+  [[ -n $dir ]] || dir=`date +%Y%m%d-%H%m%S`
+  [[ -e $dir ]] && echo "Already exists: $dir" && return 1
+  mkdir -p $dir && cd $dir
 }
 
 # See: https://github.com/ChrisJohnsen/tmux-MacOSX-pasteboard
