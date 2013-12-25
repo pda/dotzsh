@@ -15,3 +15,7 @@ setopt notify
 
 # Parameter expansion, command substitution and arithmetic expansion are performed in prompts.
 setopt prompt_subst
+
+# Commands whose combined user and system execution times (in seconds) are
+# greater than this value have timing statistics printed for them.
+REPORTTIME=2
