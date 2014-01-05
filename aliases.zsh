@@ -1,5 +1,6 @@
 alias pstree="pstree -g 2"
 alias hd="hexdump -C"
+alias ls="ls --color=auto"
 
 # mkdir and cd into a directory, defaults to current timestamp.
 function mkcd {
