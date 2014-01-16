@@ -1,4 +1,4 @@
-#!/bin/zsh
+#!/usr/bin/env zsh
 
 LN_SOURCE="$HOME/.zsh/rc.zsh"
 LN_TARGET="$HOME/.zshrc"
