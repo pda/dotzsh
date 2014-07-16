@@ -1,6 +1,9 @@
 alias pstree="pstree -g 2"
 alias hd="hexdump -C"
 
+# RFC 822 date format; HTTP etc. Not built in to BSD `date`.
+alias date822="date '+%a, %d %h %Y %H:%M:%S %z'"
+
 # mkdir and cd into a directory, defaults to current timestamp.
 function mkcd {
   local dir=$1
