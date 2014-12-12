@@ -1,7 +1,3 @@
-# rbenv
-(( $+commands[rbenv] )) &&
-  eval "$(rbenv init -)"
-
 # chruby
 CHRUBY_INIT=/usr/local/share/chruby/chruby.sh
 CHRUBY_AUTO=/usr/local/share/chruby/auto.sh
