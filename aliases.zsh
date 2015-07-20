@@ -19,10 +19,6 @@ if (( $+commands[reattach-to-user-namespace] )); then
   done
 fi
 
-# Use colordiff wrapper for diff if present.
-(( $+commands[colordiff] )) &&
-  alias diff="colordiff"
-
 # BSD / Mac OS X has jot instead of seq.
 (( $+commands[seq] )) ||
   alias seq="jot"
