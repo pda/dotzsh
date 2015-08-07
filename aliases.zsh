@@ -1,5 +1,6 @@
 alias pstree="pstree -g 2"
 alias hd="hexdump -C"
+alias dc="docker-compose"
 
 # RFC 822 date format; HTTP etc. Not built in to BSD `date`.
 alias date822="date '+%a, %d %h %Y %H:%M:%S %z'"
