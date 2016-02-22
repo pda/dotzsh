@@ -1,7 +1,7 @@
-# chruby
-CHRUBY_INIT=/usr/local/share/chruby/chruby.sh
-[ -f $CHRUBY_INIT ] && source $CHRUBY_INIT
-unset CHRUBY_INIT
+function {
+  local init=/usr/local/share/chruby/chruby.sh
+  [ -f $init ] && source $init
+}
 
 # Bundler
 alias bx="bundle exec"
