@@ -3,7 +3,7 @@ function {
   local pre_sources auto_sources post_sources
 
   # sources to load first
-  pre_sources=( options )
+  pre_sources=( options prompt )
 
   # sources to load last
   post_sources=()
