@@ -1,4 +1,4 @@
-if [ -d "$HOME/code/go" ]; then
-  export GOPATH="$HOME/code/go"
-  export PATH="$HOME/code/go/bin:$PATH"
+if [ -d "$HOME/go" ]; then
+  export GOPATH="$HOME/go"
+  export PATH="$HOME/go/bin:$PATH"
 fi
