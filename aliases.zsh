@@ -13,7 +13,3 @@ function mkcd {
   [[ -e $dir ]] && echo "Already exists: $dir" && return 1
   mkdir -p $dir && cd $dir
 }
-
-# BSD / Mac OS X has jot instead of seq.
-(( $+commands[seq] )) ||
-  alias seq="jot"
