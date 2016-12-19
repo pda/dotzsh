@@ -14,13 +14,6 @@ function mkcd {
   mkdir -p $dir && cd $dir
 }
 
-# See: https://github.com/ChrisJohnsen/tmux-MacOSX-pasteboard
-if (( $+commands[reattach-to-user-namespace] )); then
-  for cmd in pbcopy pbpaste launchd; do
-    alias $cmd="reattach-to-user-namespace $cmd"
-  done
-fi
-
 # BSD / Mac OS X has jot instead of seq.
 (( $+commands[seq] )) ||
   alias seq="jot"
