@@ -9,7 +9,7 @@ function {
   post_sources=()
 
   # load remaining sources automatically
-  auto_sources=(`for f in ~/.zsh/*.zsh; do basename $f .zsh; done`)
+  auto_sources=($(for f in ~/.zsh/*.zsh; do basename $f .zsh; done))
 
   for source in rc $pre_sources $post_sources; do
     auto_sources[(i)$source]=""
