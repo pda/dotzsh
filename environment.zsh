@@ -1,6 +1,6 @@
 export PATH="$HOME/bin:/usr/local/bin:/usr/local/sbin:$PATH"
 
-export EDITOR=vim
+export EDITOR=nvim
 
 export CLICOLOR=1
 
