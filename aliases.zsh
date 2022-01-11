@@ -6,7 +6,6 @@ alias dc="docker-compose"
 alias ssh="TERM=${TERM/tmux/xterm} ssh"
 
 # RFC 822 date format; HTTP etc. Not built in to BSD `date`.
-alias date822="date '+%a, %d %h %Y %H:%M:%S %z'"
 alias date8601="date -u '+%Y-%m-%dT%H:%M:%SZ'"
 
 # mkdir and cd into a directory, defaults to current timestamp.
