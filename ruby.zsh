@@ -1,11 +1,12 @@
 function {
   local candidates=(
-    "/usr/share/chruby/chruby.sh"       # e.g. Arch linux
-    "/usr/local/share/chruby/chruby.sh" # e.g. macOS
+    "/usr/local/share/chruby" # e.g. macOS
+    "/usr/share/chruby"       # e.g. Arch linux
   )
-  for chruby in $candidates; do
-    if [[ -f $chruby ]]; then
-      source $chruby
+  for d in "${candidates[@]}"; do
+    if [[ -d $d ]]; then
+      source "$d/chruby.sh"
+      source "$d/auto.sh"
       break
     fi
   done
